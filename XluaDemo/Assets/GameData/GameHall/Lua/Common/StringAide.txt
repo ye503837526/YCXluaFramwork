@@ -1,0 +1,192 @@
+StringAide = {}
+
+local rate = 1
+local unit = 10000
+
+function StringAide:FormatMinute(seconds)
+    return string.format("%02d:%02d",math.modf(seconds/60),math.modf(seconds%60))
+end
+
+function StringAide:FormatThouSand(score)
+    local cell = cellscore or 10000
+    local str = tostring(score)
+    if score >= 1000000000 then
+        local str1 = string.sub(str,1,string.len(str)-8)
+        local str2 = string.sub(str,-8,-7)
+        str = str1.."."..str2.."y"
+    elseif score >= 1000000 then
+        local str1 = string.sub(str,1,string.len(str)-4)
+        local str2 = string.sub(str,-4,-3)
+        str = str1.."."..str2.."w"
+    end
+    return str
+end
+
+function StringAide:SimplifyScore(score)
+    local cell = cellscore or 10000
+    local str = tostring(score)
+    if score >= 100000000 then
+        local str1 = string.sub(str,1,string.len(str)-8)
+        local str2 = string.sub(str,-8,-7)
+        str = str1.."."..str2.."亿"
+    elseif score >= 10000 then
+        local str1 = string.sub(str,1,string.len(str)-4)
+        local str2 = string.sub(str,-4,-3)
+        str = str1.."."..str2.."万"
+    end
+    return str
+end
+
+function StringAide:SimplifyScoreSpec(rawscore,dotcount,scorelimit)
+    local score = math.abs(rawscore * rate)
+    dotcount = dotcount or 2
+    scorelimit = scorelimit  or unit 
+    local qua = rawscore >= 0 and '' or '-'
+    local str = ""
+    if scorelimit <= 0 or score < scorelimit then
+        local fn = score % 1 == 0 and 0 or dotcount
+    	local fmt = "%." .. fn .. "f"
+    	str =  qua .. string.format(fmt,score)
+    else
+        local fn = (score/unit) % 1 == 0 and 0 or 2
+    	local fmt = "%." .. fn .. "f"
+    	str =  qua .. string.format(fmt,score/unit) .. '万'
+    end
+    return str
+end
+
+function StringAide:FormatSettleScore(rawscore,dotcount)
+    local score = math.abs(rawscore * rate)
+    dotcount = dotcount or 2
+    scorelimit = scorelimit  or unit 
+    local qua = rawscore >= 0 and '+' or '-'
+    local str = ""
+    if score < scorelimit then
+        local fn = score % 1 == 0 and 0 or dotcount
+    	local fmt = "%." .. fn .. "f"
+    	str =  qua .. string.format(fmt,score)
+    else
+        local fn = (score/unit) % 1 == 0 and 0 or 2
+    	local fmt = "%." .. fn .. "f"
+    	str =  qua .. string.format(fmt,score/unit) .. 'w'
+    end
+    return str
+end
+
+function StringAide:FormatChipScore(rawscore,scorelimit)
+    local score = math.abs(rawscore * rate)
+    local dotcount = 2
+    scorelimit = scorelimit  or unit 
+    local qua = rawscore >= 0 and '' or '-'
+    local str = ""
+    if score < scorelimit then
+        local fn = score % 1 == 0 and 0 or dotcount
+        local fmt = "%." .. fn .. "f"
+        str =  qua .. string.format(fmt,score)
+    else
+        local fn = (score/unit) % 1 == 0 and 0 or 2
+        local fmt = "%." .. fn .. "f"
+        str =  qua .. string.format(fmt,score/unit) .. 'w'
+    end
+    return str
+end
+
+function StringAide:FormatChipScoreK(rawscore,scorelimit)
+    local score = math.abs(rawscore * rate)
+    local dotcount = 2
+    scorelimit = scorelimit or 1000 
+    local qua = rawscore >= 0 and '' or '-'
+    local str = ""
+    if score < scorelimit then
+        local fn = score % 1 == 0 and 0 or dotcount
+        local fmt = "%." .. fn .. "f"
+        str =  qua .. string.format(fmt,score)
+    else
+        local fn = (score/1000) % 1 == 0 and 0 or 2
+        local fmt = "%." .. fn .. "f"
+        str =  qua .. string.format(fmt,score/1000) .. 'k'
+    end
+    return str
+end
+
+function StringAide:StringEllipsis( str,len )
+	local length = len or 10
+	return StringUtil.StringEllipsis(str, length)
+end
+
+local function Bytes4Character(theByte)
+    local seperate = {0, 0xc0, 0xe0, 0xf0}
+    for i = #seperate, 1, -1 do
+        if theByte >= seperate[i] then return i end
+    end
+    return 1
+end
+
+function StringAide:GetUtf8Length(utf8Str, chineseCharBytes)
+    local aChineseCharBytes = chineseCharBytes or 2
+    local i = 1
+    local characterSum = 0
+    while (i <= #utf8Str) do      -- 编码的关系
+        local bytes4Character = Bytes4Character(string.byte(utf8Str, i))
+        characterSum = characterSum + (bytes4Character > aChineseCharBytes and aChineseCharBytes or bytes4Character)
+        i = i + bytes4Character
+    end
+    return characterSum
+end
+
+function StringAide:ConvetThousands(num)
+    local qua = num > 0 and "+" or "-"
+    local str1 =""
+    local str = tostring(num)
+    local strLen = string.len(str)
+    if deperator == nil then
+        deperator = ","
+    end
+    deperator = tostring(deperator) 
+    for i=1,strLen do
+        str1 = string.char(string.byte(str,strLen+1 - i)) .. str1
+        if i % 3 == 0  then
+            if strLen - i ~= 0 then
+                str1 = ","..str1
+            end
+        end
+    end
+    return qua..str1
+end
+
+function StringAide:Trim( str )
+    return string.gsub(str, "^%s*(.-)%s*$", "%1")
+end
+
+-- 获取字符串的长度
+function StringAide:GetStringLength(inputstr)
+    if not inputstr or type(inputstr) ~= "string" or #inputstr <= 0 then
+        return 0
+    end
+    local length = 0  -- 字符的个数
+    local i = 1
+    while true do
+        local curByte = string.byte(inputstr, i)
+        local byteCount = 1
+        if curByte > 239 then
+            byteCount = 4  -- 4字节字符
+        elseif curByte > 223 then
+            byteCount = 3  -- 汉字
+        elseif curByte > 128 then
+            byteCount = 2  -- 双字节字符
+        else
+            byteCount = 1  -- 单字节字符
+        end
+        -- local char = string.sub(inputstr, i, i + byteCount - 1)
+        -- print(char)  -- 打印单个字符
+        i = i + byteCount
+        length = length + 1
+        if i > #inputstr then
+            break
+        end
+    end
+    return length
+end
+
+--print("test score1:",StringAide:SimplifyScoreSpec(99891),StringAide:SimplifyScoreSpec(1003234),StringAide:SimplifyScoreSpec(998567))
+return StringAide

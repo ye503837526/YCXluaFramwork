@@ -1,0 +1,16 @@
+
+--DO NOT  modify it!
+--auto generated at 2020/9/21 22:24:03!
+local  LoadingViewUI = {   }
+
+function LoadingViewUI:Parse( view )
+    local aide = ViewAide
+    local ui = {}
+    ui.ImageSlider = aide:GetComponent(view.ImageSlider,Image)
+
+
+    return ui
+end
+
+return LoadingViewUI
+

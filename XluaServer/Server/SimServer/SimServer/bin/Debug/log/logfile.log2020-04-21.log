@@ -1,0 +1,18 @@
+﻿2020-04-21 14:02:37,697 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-21 14:03:02,513 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-21 14:03:06,111 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-21 14:07:43,730 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-21 14:07:49,551 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-21 15:39:54,281 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-21 15:39:59,264 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-21 15:40:02,997 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-21 15:40:26,061 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-21 15:40:30,414 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-21 15:40:32,433 [1] DEBUG Debug - Ocean Debug 
+2020-04-21 15:40:37,715 [1] ERROR Debug - 注册失败：SqlSugar.SqlSugarException: English Message : Connection open error . Unable to connect to any of the specified MySQL hosts.
+Chinese Message :  连接数据库过程中发生错误，检查服务器是否正常连接字符串是否正确，实在找不到原因请先Google错误信息：Unable to connect to any of the specified MySQL hosts..
+   在 SqlSugar.AdoProvider.GetScalar(String sql, SugarParameter[] parameters)
+   在 SqlSugar.AdoProvider.GetInt(String sql, SugarParameter[] parameters)
+   在 SqlSugar.QueryableProvider`1.GetCount()
+   在 SqlSugar.QueryableProvider`1.Count()
+   在 SimServer.Business.UserManager.Register(RegisterType registerType, String userName, String pwd, String& token) 位置 D:\Project\Siki_Server\Server\SimServer\SimServer\Business\UserManager.cs:行号 25 Debug 

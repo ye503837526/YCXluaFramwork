@@ -1,0 +1,5 @@
+﻿Version|1.0;PackageName|com.Company.ProductName;
+
+com.Company.ProductName //B站包名
+com.Company.ProductName //华为包名
+链接服务器

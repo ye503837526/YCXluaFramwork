@@ -1,0 +1,13 @@
+local HallSceneManager={}
+
+function HallSceneManager:Init()
+	print("HallSceneManager  Init >>>>>>>>>>>>>>>>>")
+	--加载大厅界面
+	Facade.view:LoadView("HallView")
+end
+
+function HallSceneManager:Release()
+	 
+end
+
+return HallSceneManager

@@ -1,0 +1,39 @@
+
+--preload script
+require "GameHall.Lua.Common.Functions"
+require "GameHall.Lua.Define.ClassRegister"
+require "GameHall.Lua.MediatorModule.View.BaseAide.ViewAide"
+require "GameHall.Lua.SceneManager.SceneManager"
+--Net
+require "GameHall.Lua.Network.Manager.NetEventCtrl"
+require "GameHall.Lua.Network.Manager.NetworkManager"
+require "GameHall.Lua.Network.Protocal.GameProto"
+require "GameHall.Lua.Network.Protocal.SerlializePacket"
+require "GameHall.Lua.Network.Protocal.NetProtocal"
+--外观接口
+require "GameHall.Lua.MediatorModule.CoreModule.Facade"
+
+--hotfix
+local function excute_hotfix()
+	print("excute_hotfix...")
+	require "GameHall.Lua.HotFix.Hotfix"
+end
+local ret,_msg = pcall(excute_hotfix)
+if not ret then
+	Debug.LogError("hotfix error!reason:".._msg)
+end
+
+--记得加上h标记
+-- require "GameHall.Lua.View.Common.Debugger"
+
+--禁用多点触控，防止意外问题
+Input.multiTouchEnabled = false
+
+--[[
+优化
+slience:静默，如果只是小版本号更新，重连不提示登陆
+forcejumpappdownload:当有App下载时取消内部下载，改为弹出下载页面
+
+]]
+
+print("Main Loaded..123333564654>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.")

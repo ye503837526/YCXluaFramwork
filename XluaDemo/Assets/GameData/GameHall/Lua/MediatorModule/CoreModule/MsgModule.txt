@@ -1,0 +1,19 @@
+MsgModule={}
+
+
+
+function MsgModule:Init()
+	print("MsgModule:Init()")
+	self.login=require "GameHall.Lua.MediatorModule.Msg.LoginMsgHandle"
+
+	self.login:Init()
+end
+
+
+function MsgModule:Release()
+
+	 self.login:Release()
+	 self.login=nil	
+end
+
+return MsgModule	

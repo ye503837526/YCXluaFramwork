@@ -1,0 +1,11 @@
+UserDataCtrl={}
+
+function UserDataCtrl:Init()
+	-- body
+end
+
+function UserDataCtrl:Release()
+	-- body
+end
+
+return UserDataCtrl

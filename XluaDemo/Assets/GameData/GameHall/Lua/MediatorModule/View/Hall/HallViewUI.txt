@@ -1,0 +1,18 @@
+
+--DO NOT  modify it!
+--auto generated at 2020/9/21 22:09:26!
+local  HallViewUI = {   }
+
+function HallViewUI:Parse( view )
+    local aide = ViewAide
+    local ui = {}
+    ui.TextConnect = aide:GetComponent(view.TextConnect,Text)
+    ui.ButtonJoinGame = aide:GetComponent(view.ButtonJoinGame,Button)
+
+    aide:AddButtonEvent(ui.ButtonJoinGame,view,view.OnButtonJoinGameEvent)
+
+    return ui
+end
+
+return HallViewUI
+

@@ -1,0 +1,14 @@
+local util =require "GameHall.Lua.xlua.util"
+
+xlua.hotfix(CS.GameFramwork.XlueDemoHotTest,"testHotFix",function(self)
+	print("Lua Hotfix 热更方法成功 >>>>>>>>>!!!!!!!.")
+end)
+
+xlua.hotfix(GF.XlueDemoHotTest,"testAndroidHot",function(self)
+	print("Lua testAndroidHot 热更方法成功 >>>>>>>>>!!!!!!!.")
+end)
+
+util.hotfix_ex(CS.GameFramwork.XlueDemoHotTest,"testHotEx",function(self)
+	print("Lua HotFix  追加热更成功>>>>>>>>@#@#@#@#@")
+	self:testHotEx()
+end)

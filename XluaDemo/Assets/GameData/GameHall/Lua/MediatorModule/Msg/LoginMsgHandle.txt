@@ -1,0 +1,36 @@
+local _ENV = require "GameHall.Lua.MediatorModule.Msg.MsgEnv"
+local LoginMsgHandle={}
+
+function LoginMsgHandle:Init()
+	NetEventCtrl:AddEvent(NetProtocal.LOGIN_LOGIN_RESPONSE,self,self.RcveLoginResponse)
+end
+
+-----------------------------------------------
+--发送登录请求协议
+-----------------------------------------------
+function LoginMsgHandle:SendLoginRequest()
+	local request={
+		loginType=1,
+		name="壹叶成名",
+		loginPass=66666,
+		gameid=888888,
+	}	
+ 	print("发送登录请求协议...")
+	NetworkManager:SendPacket(NetProtocal.LOGIN_LOGIN_REQUEST,"LoginRequest",request)
+end
+-----------------------------------------------
+--发送登录请求响应
+-----------------------------------------------
+function LoginMsgHandle:RcveLoginResponse(packet)
+	print("收到登录响应！packet:",packet)
+	local response= pb.decode("LoginResponse",packet)
+	print("response.username:",response.username ," response.diamonds:",response.diamonds)
+end
+
+
+
+function LoginMsgHandle:Release()
+	NetEventCtrl:RemoveEvent(NetProtocal.LOGIN_LOGIN_RESPONSE,self,self.RcveLoginResponse)
+end
+
+return LoginMsgHandle

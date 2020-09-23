@@ -1,0 +1,109 @@
+--全局公用的变量放在这里一起定义...
+--register namespace
+Packet = CS.Legend.Game
+GF = CS.GameFramwork
+GameDefine = CS.Legend.Framework.GameDefine
+
+--engine
+GameObject = CS.UnityEngine.GameObject
+Transform = CS.UnityEngine.Transform
+Sprite = CS.UnityEngine.Sprite
+UnityAction = CS.UnityEngine.Events.UnityAction
+PlayerPrefs = CS.UnityEngine.PlayerPrefs
+Debug = CS.UnityEngine.Debug
+Color = CS.UnityEngine.Color
+Vector3 = CS.UnityEngine.Vector3
+Vector2 = CS.UnityEngine.Vector2
+Quaternion = CS.UnityEngine.Quaternion
+Time = CS.UnityEngine.Time
+SceneManager = CS.UnityEngine.SceneManagement.SceneManager
+Animation = CS.UnityEngine.Animation
+AudioSource = CS.UnityEngine.AudioSource
+AudioClip = CS.UnityEngine.AudioClip
+Camera = CS.UnityEngine.Camera
+Input = CS.UnityEngine.Input
+StringList = CS.System.Collections.Generic.List(CS.System.String)
+Texture2D = CS.UnityEngine.Texture2D
+TextAsset=CS.UnityEngine.TextAsset
+Rect = CS.UnityEngine.Rect
+ImageConversion = CS.UnityEngine.ImageConversion
+GUIUtility = CS.UnityEngine.GUIUtility
+Rect = CS.UnityEngine.Rect
+Screen = CS.UnityEngine.Screen
+Application = CS.UnityEngine.Application
+SystemInfo = CS.UnityEngine.SystemInfo
+CanvasGroup = CS.UnityEngine.CanvasGroup
+SceneManager = CS.UnityEngine.SceneManagement.SceneManager
+Mathf = CS.UnityEngine.Mathf
+
+--framework
+LuaBehaviour = CS.GameFramwork.LuaBehaviour
+EncryptUtil = CS.GameFramwork.EncryptUtil
+ZJEncrypt = CS.GameFramwork.ZJEncrypt
+EventTriggerAssist = CS.GameFramwork.EventTriggerAssist
+HardWare = CS.GameFramwork.HardWare
+StringUtil = CS.GameFramwork.StringUtil
+ScalerButton = CS.GameFramwork.ScalerButton
+AssetsManager = CS.GameFramwork.AssetsManager
+TimerManager=GF.TimerManager
+
+--gamepublic
+LeanTween = CS.LeanTween
+LeanTweenType = CS.LeanTweenType
+LeanAudio = CS.LeanAudio
+TextMeshProUGUI = CS.TMPro.TextMeshProUGUI
+uTweenPosition = CS.uGUI.uTweenPosition
+uTweenRotation = CS.uGUI.uTweenRotation
+uTweenAnchoredPosition = CS.uGUI.uTweenAnchoredPosition
+uTweenAlpha = CS.uGUI.uTweenAlpha
+uTweenScale = CS.uGUI.uTweenScale
+EaseType = CS.EaseType
+LoopStyle = CS.LoopStyle
+EmojiText = CS.EmojiText
+
+--spine
+Spine = CS.Spine
+SkeletonGraphic = Spine.Unity.SkeletonGraphic
+SkeletonAnimation = CS.Spine.Unity.SkeletonAnimation
+
+--best http
+HTTPRequest = CS.BestHTTP.HTTPRequest
+HTTPResponse = CS.BestHTTP.HTTPResponse
+HTTPMethods = CS.BestHTTP.HTTPMethods
+Uri = CS.System.Uri
+
+--ngui
+UIEventListener = CS.UIEventListener
+UILabel=CS.UILabel;
+
+--ugui
+Canvas = CS.UnityEngine.Canvas
+RectTransform = CS.UnityEngine.RectTransform
+UGUI = CS.UnityEngine.UI
+Button = UGUI.Button
+Image = UGUI.Image
+RawImage = UGUI.RawImage
+Text = UGUI.Text
+Toggle = UGUI.Toggle
+InputField = UGUI.InputField
+ToggleGroup = UGUI.ToggleGroup
+ScrollView = CS.UnityEngine.UI.ScrollView
+Slider = CS.UnityEngine.UI.Slider
+GridLayoutGroup = CS.UnityEngine.UI.GridLayoutGroup
+ScrollRect =  CS.UnityEngine.UI.ScrollRect
+Dropdown = CS.UnityEngine.UI.Dropdown
+OptionData=CS.UnityEngine.UI.Dropdown.OptionData
+RectTransformUtility = CS.UnityEngine.RectTransformUtility
+AnimBounce=CS.Legend.Game.AnimBounce
+--textmeshpro
+TextMeshProUGUI = CS.TMPro.TextMeshProUGUI
+TMP_InputField = CS.TMPro.TMP_InputField
+
+-----------------------------------
+UniWebView = CS.UniWebView
+
+
+---
+TabView = CS.Legend.GamePublic.TabView
+ResManager = CS.Legend.Game.ResManager
+GameEnum = CS.Legend.Game.GameEnum

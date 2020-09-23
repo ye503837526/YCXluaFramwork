@@ -1,0 +1,29 @@
+local _ENV = require "GameHall.Lua.MediatorModule.View.BaseAide.ViewEnv"
+local ui = require "GameHall.Lua.MediatorModule.View.Loading.LoadingViewUI"
+local LoadingView = class("LoadingView",ViewBase)
+
+function LoadingView:ParseUI()
+    if self.ui ~= nil then return end
+    self.ui = ui:Parse(self)
+
+end
+
+function LoadingView:Awake()
+    self:Register("LoadingView")
+    self:ParseUI()
+end
+
+
+function LoadingView:Start()
+	TimerManager.AddUpdate(self.gameObject,300,function(value)
+		print("LoadingProgress:",GF.GameMapManager.LoadingProgress)
+		self.ui.ImageSlider.fillAmount=GF.GameMapManager.LoadingProgress/100
+	end)
+end
+ 
+function LoadingView:OnDestroy()
+    self:UnRegister()
+end
+
+return LoadingView
+

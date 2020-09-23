@@ -1,0 +1,70 @@
+local loginSceneMgr = require "GameHall.Lua.SceneManager.LoginSceneManger"
+local hallSceneMgr = require "GameHall.Lua.SceneManager.HallSceneManager"
+local gameSceneMgr = require "GameHall.Lua.SceneManager.GameSceneManager"
+
+SceneManager={}
+
+function SceneManager:Init()
+	--开始加载
+	local function startload()
+		self:LoadStart()
+	end
+	--加载完成 设置场景信息 Loding未关闭
+	local function loadfinish()
+		self:LoadFinish()
+	end
+	--加载结束 关闭Loading
+	local function loadover()
+		self:LoadOver()
+	end
+	GF.GameMapManager.Instance.LoadSceneOverCallBack=loadover
+	GF.GameMapManager.Instance.LoadSceneEnterCallBack=startload
+	GF.GameMapManager.Instance.SetSceneSettingCallBack=loadfinish
+end
+
+--加载开始  释放当前场景控制器生命周期
+function SceneManager:LoadStart()
+	local scenename =GF.GameMapManager.Instance.CurrentMapName
+	print("LoadStart:",scenename)
+
+	if	scenename=="Login" then 
+		loginSceneMgr:Release()
+	elseif scenename=="Hall" then
+		hallSceneMgr:Release()
+	elseif scenename=="Game" then
+		gameSceneMgr:Release()
+	end
+
+end
+
+--加载完成  初始化当前场景控制器生命周期
+function SceneManager:LoadFinish()
+	
+	local scenename =GF.GameMapManager.Instance.CurrentMapName
+	print("LoadFinish:",scenename)
+
+	if	scenename=="Login" then 
+		loginSceneMgr:Init()
+	elseif scenename=="Hall" then
+		hallSceneMgr:Init()
+	elseif scenename=="Game" then
+		gameSceneMgr:Init()
+	end
+end
+
+--加载结束
+function SceneManager:LoadOver()
+	Facade.view:CloseViewByName("LoadingView")
+end
+--加载场景
+function SceneManager:LoadScene(scenename,jumpLoading)
+	if jumpLoading== nil or jumpLoading==false then	
+		Facade.view:LoadView("LoadingView")
+		jumpLoading=false
+	end
+
+	GF.GameMapManager.Instance:LoadScene(scenename,jumpLoading)
+end
+
+SceneManager:Init()
+return SceneManager

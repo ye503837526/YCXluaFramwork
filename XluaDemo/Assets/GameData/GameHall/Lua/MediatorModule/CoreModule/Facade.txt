@@ -1,0 +1,23 @@
+Facade={}
+
+
+--各个模块层初始化
+function Facade:Init()
+	print("Facade:Init()")
+	self.view=require "GameHall.Lua.MediatorModule.CoreModule.ViewModule"
+	self.msg=require "GameHall.Lua.MediatorModule.CoreModule.MsgModule"
+	self.data=require "GameHall.Lua.MediatorModule.CoreModule.DataModule"
+	self.view:Init()
+	self.msg:Init()
+	self.data:Init()
+end
+
+--各个模块层释放
+function Facade:Release()
+	if self.view~=nil then
+		self.view:Release()
+		self.msg:Release()
+		self.data:Release()
+	end
+end
+return Facade	

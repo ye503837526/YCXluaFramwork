@@ -1,0 +1,7 @@
+NetProtocal={
+	--登录请求和响应
+	LOGIN_LOGIN_REQUEST=10,
+	LOGIN_LOGIN_RESPONSE=11,
+
+}
+

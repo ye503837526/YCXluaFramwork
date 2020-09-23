@@ -1,0 +1,17 @@
+
+--DO NOT  modify it!
+--auto generated at 2020/9/12 21:03:49!
+local  LoginViewUI = {   }
+
+function LoginViewUI:Parse( view )
+    local aide = ViewAide
+    local ui = {}
+    ui.ButtonCLick = aide:GetComponent(view.ButtonCLick,Button)
+
+    aide:AddButtonEvent(ui.ButtonCLick,view,view.OnButtonCLickEvent)
+
+    return ui
+end
+
+return LoginViewUI
+

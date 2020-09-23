@@ -1,0 +1,22 @@
+LanguagesUtil = {}
+
+
+-- 根据 key 获取对应的字符串
+function LanguagesUtil:GetString(key)
+
+    if key == nil or key =="" then 
+        print(" key 不能为空! ")
+        return ""
+    end
+
+    local value = ConfigCenter.Languages[key]
+    if value ~= nil then 
+        return tostring( value.CN  )
+    else
+        print(" 未查询到对应的字符串, key : ",key)
+        return ""
+    end
+
+end
+
+return LanguagesUtil

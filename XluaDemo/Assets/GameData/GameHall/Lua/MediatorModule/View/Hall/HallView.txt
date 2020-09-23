@@ -1,0 +1,30 @@
+local _ENV = require "GameHall.Lua.MediatorModule.View.BaseAide.ViewEnv"
+local ui = require "GameHall.Lua.MediatorModule.View.Hall.HallViewUI"
+local HallView = class("HallView",ViewBase)
+
+function HallView:ParseUI()
+    if self.ui ~= nil then return end
+    self.ui = ui:Parse(self)
+
+end
+
+function HallView:Awake()
+    self:Register("HallView")
+    self:ParseUI()
+end
+
+function HallView:Start()
+
+end
+ 
+function HallView:OnButtonJoinGameEvent(button)
+    SceneManager:LoadScene("Game")
+    self:CloseView()
+end
+
+function HallView:OnDestroy()
+    self:UnRegister()
+end
+
+return HallView
+

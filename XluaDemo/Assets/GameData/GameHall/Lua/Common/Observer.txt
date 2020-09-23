@@ -1,0 +1,71 @@
+local Observer = { observers = {} }
+
+function Observer.New()
+	local o = {}
+	setmetatable(o,{__index = Observer})
+	return o
+end
+
+function Observer:Observe(event,target,func)
+	if target == nil or func == nil then
+		Debug.LogError("Observer AddObserver error!target or func is nil!\n"..event.. debug.traceback())
+		return
+	end
+	local observers = self.observers[event]
+	if observers == nil then
+		self.observers[event] = {}
+		observers = self.observers[event]
+	end
+	local find = 0
+	for i =1,#observers do
+		if observers[i].target == target and observers[i].func == func then
+			find = i
+			break
+		end
+	end
+	if find > 0 then
+		Debug.LogError("Observer Observe error!repeat add")
+	else
+		table.insert(observers,{target=target,func=func})
+	end
+end
+
+function Observer:FireEvent(event,...)
+	local observers = self.observers[event]
+	if observers == nil then
+		return
+	end
+	for i = 1,#observers do
+		local obj = observers[i]
+		if obj ~= nil then
+		   obj.func(obj.target,...)
+		end
+	end
+end
+
+function Observer:Cancel( event,target )
+	local observers = self.observers[event]
+	if observers == nil then
+		Debug.LogError("Observer can not cancel!event not founded??")
+		return
+	end
+	for k = #observers,1,-1 do
+		if observers[k].target == target then
+			table.remove(observers,k)
+		end
+	end
+end
+
+function Observer:CancelTarget(target)
+	local cancellist = {}
+	for k,v in pairs(self.observers) do
+		self:Cancel(k,target)
+	end
+end
+
+function Observer:CancelAll()
+	self.observers = nil
+	self.observers = {}
+end
+
+return Observer

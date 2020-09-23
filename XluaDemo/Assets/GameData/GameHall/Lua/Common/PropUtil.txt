@@ -1,0 +1,103 @@
+
+PropUtil = {}
+local model = require "GameHall.Lua.Module.Prop.PropModel"
+AssetLoader = AssetManager.Get("GameHall")
+
+
+------------------------------------------------------------------------
+--校验是否为限时道具
+------------------------------------------------------------------------
+function PropUtil:VerfiyLimitProp(propid)
+    if propid>=2201 and propid<=2209 then
+        return true
+    end
+    if propid>=2230 and propid<=2272 then
+        return true
+    end
+    return false
+end
+------------------------------------------------------------------------
+--Parse解析礼包配置物品列表
+------------------------------------------------------------------------
+function PropUtil:ParsePackageGood(str)
+    str=tostring(str)
+    print("str:",str)
+    local data = nil
+    local index = 1
+    for a,b,c,d in string.gmatch(str,"(%d+):(%d+):(%d+):(%d+)") do
+    -- print("------------------------>",a,b,c,d)
+     data=model.NewPackageGood(a,b,c,d)
+    end
+
+    return data
+
+end
+------------------------------------------------------------------------
+--Parse解析礼包配置物品列表
+--Proptype =tonumber(type),			--物品类型
+--Propid = tonumber(propid),			--物品id
+--Count = tonumber(count),				--物品长度
+--Islock = islock,			--物品是否绑定
+------------------------------------------------------------------------
+function PropUtil:ParsePackageGoodsList(str)
+    str=tostring(str)
+    --print("str:",str)
+    local tempGooldsList = {}
+    local index = 1
+    for a,b,c,d in string.gmatch(str,"(%d+):(%d+):(%d+):(%d+)") do
+    -- print("------------------------>",a,b,c,d)
+     table.insert(tempGooldsList,model.NewPackageGood(a,b,c,d)) 
+    end
+    return tempGooldsList
+end
+
+function PropUtil:LoadPackageIcon(iconName)
+    print("iconName",iconName)
+    if tostring(iconName)==nil or tostring(iconName)=="" then
+        print("iconName 礼包ID为空！" )
+        return
+    end
+    return AssetLoader:LoadSpriteFromSheet("Texture/Package/PackageAtlas",iconName)
+end
+
+------------------------------------------------------------------------
+--根据道具ID加载道具图片
+------------------------------------------------------------------------
+function PropUtil:LoadPropSpriteById(propid)
+    local propdata = self:GetPropData(propid)
+    if propdata==nil then 
+        print("改物品ID在Items配置表中没有配置 :",propid)
+        return nil
+    end
+    local sprite=AssetLoader:LoadSpriteFromSheet("Texture/Common/ItemAltas",propdata.ItemIcon)
+    if sprite == nil then
+        sprite = AssetLoader:LoadSpriteFromSheet("Texture/Common/ItemAltas","101")
+    end
+    return sprite
+end
+------------------------------------------------------------------------
+--加载Item图片
+------------------------------------------------------------------------
+function PropUtil:LoadItemSprite(iconName)
+    return AssetLoader:LoadSpriteFromSheet("Texture/Common/ItemAltas",iconName)
+end
+------------------------------------------------------------------------
+--根据礼包ID获取礼包
+------------------------------------------------------------------------
+function PropUtil:GetPackageListByType(type)
+    local packageidList={}
+    --初始化VIP礼包
+	for i,v in pairs(ConfigCenter.Package) do
+		if v.PackageType==type  then --如果是回馈礼包
+            table.insert(packageidList,v)
+		end 
+    end
+    return packageidList
+end
+
+-- 获取物品信息
+function PropUtil:GetPropData(propid)
+    propid=tonumber(propid)
+    return ConfigCenter.Items[propid]
+end
+return PropUtil

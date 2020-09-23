@@ -1,0 +1,40 @@
+local observer = require "GameHall.Lua.Common.Observer"
+-- local mask =require "GameHall.Lua.View.Common.MaskWidget"
+
+ViewBase  = { ui = nil,observers=nil}
+
+function ViewBase:Register(viewname,hide)
+	self.viewname = viewname
+	Facade.view:Register(self,viewname)
+	print("ViewBase Register")
+end
+
+function ViewBase:UnRegister()
+	Facade.view:UnRegister(self.viewname)
+	self:RemoveAllObserver()
+	self.ui = nil
+end
+
+function ViewBase:FireEvent(evtname,...)
+	observer:FireEvent(evtname,...)
+end
+
+function ViewBase:AddObserver(evtname,handlefunc)
+	self.observers = {} --to do
+	observer:Observe(evtname,self,handlefunc)
+end
+
+function ViewBase:RemoveObserver(evtname)
+	observer:Cancel(evtname,self)
+end
+
+function ViewBase:RemoveAllObserver()
+	if self.observers == nil then return end --to do
+	observer:CancelTarget(self)
+end
+
+function ViewBase:CloseView()
+	Facade.view:CloseView(self)
+end
+
+return ViewBase

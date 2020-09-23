@@ -1,0 +1,19 @@
+local LoginSceneManger={}
+
+
+function LoginSceneManger:Init()
+	print("LoginSceneManger  Init >>>>>>>>>>>>>>>>>")
+	--释放框架数据
+	Facade:Release()
+	--释放框架
+	Facade:Init()
+	--加载登录界面
+ 	Facade.view:LoadView("LoginView")
+end
+
+function LoginSceneManger:Release()
+	 
+end
+
+return LoginSceneManger
+

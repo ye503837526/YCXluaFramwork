@@ -1,0 +1,7 @@
+local MsgEnv ={
+	
+	pb=require "pb"
+}
+
+setmetatable(MsgEnv,{__index=_G})
+return MsgEnv

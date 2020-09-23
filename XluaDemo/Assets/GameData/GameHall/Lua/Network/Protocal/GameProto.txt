@@ -1,0 +1,27 @@
+local protoc = require "GameHall.Lua.Network.Protocal.Protoc"
+-- load schema from text
+local t1 = os.clock()
+
+assert(protoc:load [[
+//option optimize_for = LITE_RUNTIME;
+
+//comm_msg.proto------------------------------------------------
+
+//登录消息
+message LoginRequest{
+	optional	int32	loginType = 1;						//登录类型
+	optional	string 	name= 2;							//昵称
+	optional	int32	loginPass = 3;						//登录密码
+	optional	int32	gameid = 4;							//游戏id
+}
+
+//登录响应
+message LoginResponse{
+	optional	string	username = 1;						//用户昵称
+	optional	int64	gold = 2;							//金币
+	optional	int64	diamonds = 3;						//钻石
+}
+]]
+)
+
+print("load protol time:",os.clock() - t1)

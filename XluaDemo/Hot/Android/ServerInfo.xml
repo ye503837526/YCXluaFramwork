@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServerInfo xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <GameVersion Version="1.0">
+    <Pathces Version="1" Des="修复部分已知bug">
+      <Files Name="Android" Url="http://192.168.124.71/AssetBundle/1.0/1/Android" Platform="Android" Md5="c03ef2f9fb1643d3f1e762feaccfe87f" Size="1.63476563" />
+      <Files Name="assetbundleconfig" Url="http://192.168.124.71/AssetBundle/1.0/1/assetbundleconfig" Platform="Android" Md5="bbfecb5817390ce0edc9976a1b90f9f9" Size="3.21289063" />
+      <Files Name="lua" Url="http://192.168.124.71/AssetBundle/1.0/1/lua" Platform="Android" Md5="6f24913aa4773697173912502e835f0e" Size="35.61914" />
+      <Files Name="scenes" Url="http://192.168.124.71/AssetBundle/1.0/1/scenes" Platform="Android" Md5="203201cf49b6cf824541471903a08843" Size="181.728516" />
+    </Pathces>
+  </GameVersion>
+</ServerInfo>

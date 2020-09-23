@@ -1,0 +1,161 @@
+
+--在此定义所有view
+local ViewDefine = {
+	--main view
+	["LoginView"] = {Preload = 0,Path="View/Login/Login_LoginView"},
+	["MobileRegisterView"] = {Preload = 0,Path="View/Login/Login_MobileRegisterView"},
+	["RegisterView"] = {Preload = 0,Path="View/Login/Login_RegisterView"},
+	["RetrievePass"] = {Preload = 0,Path="View/Login/Login_RetrievePass"},
+	["LoadingView"] = {Preload = 0,Path="View/Loading/Loading_LoadingView"},
+	["JumpLoadingView"] = {Preload = 0,Path="View/Loading/Loading_JumpLoadingView"},
+	["MainView"] = {Preload = 0,Path="View/Main/Main_MainView"},
+	["SpreadView"] = {Preload = 0,Path="View/Spread/Spread_SpreadView"},
+	["ExCodeView"] = {Preload = 0,Path="View/ExCode/ExCode_ExCodeView"},
+	["BindAgentView"] = {Preload = 0,Path="View/BindAgent/BindAgent_BindAgentView"},
+	["GameChatView"] = {Preload = 0,Path="View/Main/Main_GameChatView"},
+	["ValentineView"] = {Preload = 0,Path="View/Valentine/Valentine_ValentineView"},
+	["BatteryPackage"] = {Preload = 0,Path="View/BatteryPackage/BatteryPackage_BatteryPackage"},
+	["NewDeepRoomView"] = {Preload = 0,Path="View/Room/Room_NewDeepRoomView"},
+
+	--room view
+	["Fish3DRoomListView"] = {Preload = 0,Path="View/Room/Room_Fish3DRoomListView"},
+	["FishLKRoomListView"] = {Preload = 0,Path="View/Room/Room_FishLKRoomListView"},
+	["SmallGameView"] = {Preload = 0,Path="View/Room/Room_SmallGameView"},
+	["DDZRoomListView"] = {Preload = 0,Path="View/Room/Room_DDZRoomListView"},
+	["Fish3DRoomView"] = {Preload = 0,Path="View/Room/Room_Fish3DRoomView"},
+
+	--notice
+	["NoticeView"] = {Preload = 0,Path="View/Notice/Notice_NoticeView"},
+	["ServiceView"] = {Preload = 0,Path="View/Service/Service_ServiceView"},
+	["RankView"] = {Preload = 0,Path="View/Rank/Rank_RankView"},
+
+	--fishclub
+	["ApplyListView"] = {Preload = 0,Path="View/FishClub/FishClub_ApplyListView"},
+	["ClubView"] = 	{Preload = 0,Path="View/FishClub/FishClub_ClubView"},
+	["CreateView"] = {Preload = 0,Path="View/FishClub/FishClub_CreateView"},
+	["JoinView"] = {Preload = 0,Path="View/FishClub/FishClub_JoinView"},
+	["ZhuanbeiKuView"] = {Preload = 0,Path="View/FishClub/FishClub_ZhuanbeiKuView"},
+	["UpgradeView"] = {Preload = 0,Path="View/FishClub/FishClub_UpgradeView"},
+	["RewardtipView"] = {Preload = 0,Path="View/FishClub/FishClub_RewardtipView"},
+	["BagView"] = 	{Preload = 0,Path="View/FishClub/FishClub_BagView"},
+	["ClubInfoView"] = 	{Preload = 0,Path="View/FishClub/FishClub_ClubInfoView"},
+	["RecordView"] = 	{Preload = 0,Path="View/FishClub/FishClub_RecordView"},
+	["GoldView"] = 	{Preload = 0,Path="View/FishClub/FishClub_GoldView"},
+	["RecvClubGoldView"] = 	{Preload = 0,Path="View/FishClub/FishClub_RecvClubGoldView"},
+	--task
+	["TaskView"] = 	{Preload = 0,Path="View/Task/Task_TaskView"},
+	["NoviceTaskView"] = 	{Preload = 0,Path="View/Task/Task_NoviceTaskView"},
+	["TaskRewardView"] = {Preload = 0,Path="View/Task/Task_TaskRewardView"},
+
+	["NoviceTip"] = 	{Preload = 0,Path="View/Guide/Guide_NoviceTip"},
+	["Novice3DFish"] = 	{Preload = 0,Path="View/Guide/Guide_Novice3DFish"},
+	["ExChangeView"] = 	{Preload = 0,Path="View/ExChangeStore/ExChangeStore_ExChangeView"},
+	["Record"] = 	{Preload = 0,Path="View/ExChangeStore/ExChangeStore_Record"},
+	["ExChangeView_Help"] = 	{Preload = 0,Path="View/ExChangeStore/ExChangeStore_Help"},
+	["ApprenticePanel"] = 	{Preload = 0,Path="View/Apprentice/Apprentice_ApprenticePanel"},
+	["Set"] = 	{Preload = 0,Path="View/Set/Set_SetView"},
+	["Activity"] = 	{Preload = 0,Path="View/Activity/Activity_ActivitiesView"},
+	["Shop"] = 	{Preload = 0,Path="View/Shop/Shop_ShopView"},
+	["ExChangeRecordView"] =    {Preload = 0,Path="View/ExChangeStore/ExChangeStore_ExChangeRecordView"},
+	["RcverAddressView"] =    {Preload = 0,Path="View/ExChangeStore/ExChangeStore_RcverAddressView"},
+	["PayInfoView"] =    {Preload = 0,Path="View/Shop/Pay_PayInfoView"},
+	["LockerView"] =    {Preload = 0,Path="View/Locker/Locker_LockerView"},
+	["MyNeedLockerView"] =    {Preload = 0,Path="View/Locker/Locker_MyNeedLockerView"},
+	["LockerTipsView"] =    {Preload = 0,Path="View/Locker/Locker_LockerTipsView"},
+	["OutTimeNotRcveView"] =    {Preload = 0,Path="View/Locker/Locker_OutTimeNotRcveView"},
+	
+	["UserInfo"] =    {Preload = 0,Path="View/User/User_UserInfoView"},
+	["BindPhone"] =    {Preload = 0,Path="View/User/User_BindPhone"},
+	["HeadImage"] =    {Preload = 0,Path="View/User/User_HeadImage"},
+	["Nickname"] =    {Preload = 0,Path="View/User/User_Nickname"},
+	["RealName"] =    {Preload = 0,Path="View/User/User_RealName"},
+	["ShopExRecordView"] =    {Preload = 0,Path="View/Shop/Shop_ShopExRecordView"},
+	["BuyTipsView"] =    {Preload = 0,Path="View/Shop/Shop_BuyTipsView"},
+	["VIPView"] =    {Preload = 0,Path="View/VIP/VIP_VIPView"},
+	["VIPLuckView"] =    {Preload = 0,Path="View/VIP/VIPLuck_VIPLuckView"},
+	["VIPLevelView"] =    {Preload = 0,Path="View/VIPLevel/VIPLevel_VIPLevelView"},
+	["SigninView"] =    {Preload = 0,Path="View/Signin/Signin_SigninView"},
+	["CancelBindPhone"] =    {Preload = 0,Path="View/User/User_CancelBindPhone"},
+	["BagView"] =    {Preload = 0,Path="View/Bag/Bag_BagView"},
+	["EmailView"] =    {Preload = 0,Path="View/Email/Email_EmailView"},
+	["EmailInfoView"] =    {Preload = 0,Path="View/Email/Email_InfoView"},
+	["BagRecycle"] =    {Preload = 0,Path="View/Bag/Bag_BagRecycle"},
+	["CopperRoomView"] =  {Preload = 0,Path="View/Room/Room_CopperRoomView"},
+	["DeepRoomView"] =    {Preload = 0,Path="View/Room/Room_DeepRoomView"},
+	["SpecialGiftView"] =    {Preload = 0,Path="View/SpecialGift/SpecialGift_SpecialGiftView"},
+	["RwdPackageView"] =    {Preload = 0,Path="View/SpecialGift/SpecialGift_RwdPackageView"},
+	["AdviseView"] =    {Preload = 0,Path="View/Advise/Advise_AdviseView"},   -- 您说我改界面
+	["BatteryView"] =    {Preload = 0,Path="View/Battery/Battery_BatteryView"},
+	["AdviseAppraise"] =    {Preload = 0,Path="View/Advise/Advise_Appraise"}, -- 您说我改 评价 界面
+	["CompActivitiesView"] =    {Preload = 0,Path="View/CompActivities/CompActivities_CompActivitiesView"}, -- 综合活动界面
+	["ActivityInfoView"] =    {Preload = 0,Path="View/CompActivities/CompActivities_ActivityInfoView"}, -- 综合活动界面
+	["FirstGiftView"] =    {Preload = 0,Path="View/FristGiftPackage/FirstGift_FirstGiftView"}, -- 首冲礼包界面
+	
+	-- 公会的界面
+	["SociatyMemberListView"] =    {Preload = 0,Path="View/Sociaty/Sociaty_MemberListView"},
+	["SociatyInfoView"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyInfoView"},
+	["SociatyLevelView"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyLevelView"},
+	["SociatyLimitsView"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyLimitsView"},
+	["SociatyList"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyList"},
+	["SociatyRankList"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyRankList"},
+	["SociatyTaskView"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyTaskView"},
+	["SociatyView"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyView"},
+	["SociatyWarehouseView"] =    {Preload = 0,Path="View/Sociaty/Sociaty_WarehouseView"},
+	-- 公会的弹窗
+	["SociatyAward"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyAward"}, --公会福利
+	["SociatyChangeGonggao"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyChangeGonggao"}, --修改公告
+	["SociatyHelp"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyHelp"}, -- 公会说明
+	["SociatyMyRecord"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyMyRecord"}, -- 我的记录
+	["SociatyRecord"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyRecord"}, 	-- 公会记录
+	["SociatyRewardOr"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyRewardOr"}, -- 奖励 捐赠 存储
+	["CreateSociaty"] =    {Preload = 0,Path="View/Sociaty/Sociaty_CreateSociaty"},     -- 创建公会
+	["SociatyDetailsView"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyDetailsView"},     -- 公会详情
+	["SociatySetPassword"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatySetPassword"},     -- 设置密码
+	["SociatyInputPassword"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyInputPassword"}, -- 输入密码
+	["SociatyChangePassword"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyChangePassword"},-- 修改密码
+	["SociatyStageAdjust"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyStageAdjust"},	-- 阶段调整
+	["SociatyInviteUser"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyInviteUser"},		-- 邀请玩家
+	["SociatyInviteUserContent"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyInviteUserContent"},-- 邀请玩家2
+	["SociatyRequestUsers"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyRequestUsers"},-- 申请列表
+	["InvitedMeSociatyList"] =    {Preload = 0,Path="View/Sociaty/Sociaty_InvitedMeSociatyList"},-- 邀请列表
+	["SociatyUpgradeView"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyUpgradeView"},-- 升级公会
+	["SociatyInputPasswordForBox"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyInputPasswordForBox"},-- 领取保险柜输入密码
+	["SociatyMemberInfo"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyMemberInfo"},-- 公会成员详细信息
+	["SociatyApplyTips"] =    {Preload = 0,Path="View/Sociaty/Sociaty_SociatyApplyTips"},--申请公会的输入框
+	["ExcitingActivitiesView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_ExcitingActivitiesView"},--精彩活动界面
+	["ChongzhiFanliView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_ChongzhiFanliView"},--充值返利活动界面
+	["JuKunView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_JuKunView"},--充值返利活动界面
+	["CopperActivityView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_CopperActivityView"},-- 铜币活动页
+	["CopperRankView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_CopperRankView"},-- 铜币排行榜
+	["JuKunExplainView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_JuKunExplainView"},-- 巨鲲来袭说明界面
+	["JiXieWangBuHuoView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_JiXieWangBuHuoView"},-- 机械王活动界面
+	["JiXieWangBuhuoRankView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_JiXieWangBuhuoRankView"},-- 机械王排行榜
+	["HaiWangView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_HaiWangView"},-- 海王界面
+	["HaiWangBuhuoRankView"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_HaiWangBuhuoRankView"},-- 海王捕获排行界面
+	["ZhuanPanChouJiang"] =    {Preload = 0,Path="View/ExcitingActivities/ExcitingActivities_ZhuanPanChouJiang"},-- 海王捕获排行界面
+	
+
+	-- 新手礼包界面
+	["NovicePackageView"] =    {Preload = 0,Path="View/NovicePackage/NovicePackage_NovicePackageView"},--申请公会的输入框
+
+	["ElementMergeView"] =    {Preload = 0,Path="View/MergeConter/ElementMerge_ElementMergeView"}, -- 元素合成界面
+	["MergeConterView"] =    {Preload = 0,Path="View/MergeConter/MergeConter_MergeConterView"}, --合成中心界面
+	["FragmentMergeView"] =    {Preload = 0,Path="View/MergeConter/FragmentMerge_FragmentMergeView"}, --碎片合成界面
+	
+	["MonthlyCardView"] =    {Preload = 0,Path="View/MonthlyCard/MonthlyCard_MonthlyCardView"}, -- 月卡礼包界面
+	["QiXiLuckyDrawView"] =    {Preload = 0,Path="View/QiXi/QiXi_QiXiLuckyDrawView"}, -- 七夕活动抽奖界面
+	["QiXiLuckyRecordView"] =    {Preload = 0,Path="View/QiXi/QiXi_QiXiLuckyRecordView"}, -- 七夕活动抽奖记录界面
+	-- 仓库界面
+	["ChangkuView"] =    {Preload = 0,Path="View/Changku/Changku_ChangkuView"},  
+	["CunquView"] =    {Preload = 0,Path="View/Changku/Changku_CunquView"},  
+	["EnterView"] =    {Preload = 0,Path="View/Changku/Changku_EnterView"},  
+	["MiMaZhaohui"] =    {Preload = 0,Path="View/Changku/Changku_MiMaZhaohui"},  
+	["ChangkuOpenTip"] =    {Preload = 0,Path="View/Changku/Changku_OpenTip"},  
+	["ChangkuOpenView"] =    {Preload = 0,Path="View/Changku/Changku_OpenView"},  
+	["ChangkuJieSuoGridTip"] =    {Preload = 0,Path="View/Changku/Changku_JieSuoGridTip"},  
+	-- 你说我改新加界面
+	["AdviseContentView"] =    {Preload = 0,Path="View/Advise/Advise_AdviseContentView"},  
+	
+}
+
+return ViewDefine

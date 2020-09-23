@@ -1,0 +1,11 @@
+local GameSceneManager={}
+
+function GameSceneManager:Init()
+	 
+end
+
+function GameSceneManager:Release()
+	 
+end
+
+return GameSceneManager

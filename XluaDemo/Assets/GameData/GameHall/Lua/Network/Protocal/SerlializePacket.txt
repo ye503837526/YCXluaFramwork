@@ -1,0 +1,14 @@
+
+local pb=require "pb"
+SerlializePacket={}
+
+function SerlializePacket:Serlialize(protoname,table)
+	return pb.encode(protoname,table)
+end
+
+function SerlializePacket:DeSerlialize(protoname,bytes)
+	return pb.decode(protoname,string.sub(bytes,4))
+end
+
+
+return SerlializePacket

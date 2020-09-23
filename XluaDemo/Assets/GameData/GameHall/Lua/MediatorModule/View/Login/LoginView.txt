@@ -1,0 +1,35 @@
+local _ENV = require "GameHall.Lua.MediatorModule.View.BaseAide.ViewEnv"
+local ui = require "GameHall.Lua.MediatorModule.View.Login.LoginViewUI"
+local LoginView = class("LoginView",ViewBase)
+ 
+function LoginView:ParseUI()
+    if self.ui ~= nil then return end
+    self.ui = ui:Parse(self)
+
+end
+
+function LoginView:Awake()
+    self:Register("LoginView")
+    self:ParseUI()
+    print("LoginView  Awake>>>>>>>>")
+end
+
+function LoginView:Start()
+ print("LoginView  Start>>>>>>>>")
+end
+ 
+function LoginView:OnButtonCLickEvent(button)
+    print("LoginView  OnButtonCLickEvent Hot>")
+    Facade.msg.login:SendLoginRequest()
+    SceneManager:LoadScene("Hall",true)
+    self:CloseView()
+  
+end
+
+function LoginView:OnDestroy()
+	 print("LoginView  OnDestroy>>>>>>>>")
+    self:UnRegister()
+end
+
+return LoginView
+

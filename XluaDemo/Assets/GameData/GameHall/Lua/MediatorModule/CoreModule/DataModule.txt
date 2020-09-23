@@ -1,0 +1,21 @@
+DataModule={}
+
+
+
+function DataModule:Init()
+	print("DataModule:Init()")
+	self.selfInfo=require "GameHall.Lua.MediatorModule.Data.UserDataCtrl"
+
+	--初始化方法
+	self.selfInfo:Init()
+end
+
+
+function DataModule:Release()
+
+
+	self.selfInfo:Release()
+	self.selfInfo=nil
+end
+
+return DataModule	

@@ -1,0 +1,188 @@
+﻿2020-04-25 10:49:29,897 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-25 10:49:29,909 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-25 10:49:35,986 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-25 10:49:36,003 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 10:49:36,003 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 10:49:36,004 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 10:49:36,005 [1] DEBUG Debug - client.Sceret :Yycm1587782976 Debug 
+2020-04-25 10:49:36,007 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 10:49:36,008 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-25 10:50:06,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:50:38,333 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-25 10:50:38,342 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-04-25 10:50:38,346 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-25 10:50:42,541 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-25 10:50:42,558 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 10:50:42,560 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 10:50:42,560 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 10:50:42,561 [1] DEBUG Debug - client.Sceret :Yycm1587783043 Debug 
+2020-04-25 10:50:42,564 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 10:50:42,564 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-25 10:51:13,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:51:13,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:51:13,502 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 10:52:11,179 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-25 10:52:11,188 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-04-25 10:52:11,192 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-25 10:52:15,679 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-25 10:52:15,692 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 10:52:15,692 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 10:52:15,693 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 10:52:15,694 [1] DEBUG Debug - client.Sceret :Yycm1587783136 Debug 
+2020-04-25 10:52:20,782 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 10:52:20,784 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-25 10:52:46,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:53:52,124 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-25 10:53:52,149 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-04-25 10:53:52,153 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-25 10:53:55,817 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-25 10:53:55,829 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 10:53:55,829 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 10:53:55,831 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 10:53:55,832 [1] DEBUG Debug - client.Sceret :Yycm1587783236 Debug 
+2020-04-25 10:53:55,834 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 10:53:55,835 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-25 10:54:01,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:54:01,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:54:01,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:54:01,502 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:54:01,502 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:54:07,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:54:07,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:54:07,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:54:07,501 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:54:07,501 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:54:33,364 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-25 10:54:33,376 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-04-25 10:54:33,380 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-25 10:54:37,221 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-25 10:54:37,234 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 10:54:37,234 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 10:54:37,235 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 10:54:37,236 [1] DEBUG Debug - client.Sceret :Yycm1587783277 Debug 
+2020-04-25 10:54:37,238 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 10:54:37,239 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-25 10:54:42,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:54:42,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:54:42,502 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:54:42,502 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:54:42,502 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:54:48,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:54:48,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:54:48,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:54:48,501 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:54:48,501 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:54:54,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:54:54,500 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:54:54,500 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:54:54,501 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:54:54,501 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:55:00,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:55:00,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:55:00,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:55:00,501 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:55:00,501 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:55:06,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:55:06,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:55:06,503 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:55:06,503 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:55:06,504 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:55:12,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:55:12,500 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:55:12,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:55:12,501 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:55:12,501 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:57:07,956 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:57:07,957 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:57:07,958 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:57:07,958 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:57:07,959 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:57:07,968 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前2个客户端在线！ Debug 
+2020-04-25 10:57:07,970 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 10:57:07,971 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 10:57:07,971 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 10:57:07,972 [1] DEBUG Debug - client.Sceret :Yycm1587783428 Debug 
+2020-04-25 10:57:07,973 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 10:57:07,973 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-25 10:57:13,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 10:57:13,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 10:57:13,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 10:57:13,501 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 10:57:13,502 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 10:57:15,827 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：1 Debug 
+2020-04-25 10:59:08,501 [1] DEBUG Debug - Ping Close127.0.0.1:51356 Debug 
+2020-04-25 10:59:08,501 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-25 11:00:05,865 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-25 11:00:05,877 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 11:00:05,877 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 11:00:05,879 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 11:00:05,879 [1] DEBUG Debug - client.Sceret :Yycm1587783606 Debug 
+2020-04-25 11:00:05,880 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 11:00:05,880 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-25 11:00:11,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 11:00:11,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 11:00:11,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 11:00:11,502 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 11:00:11,502 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 11:00:17,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 11:00:17,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 11:00:17,502 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 11:00:17,503 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 11:00:17,504 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 11:00:23,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 11:00:23,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 11:00:23,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 11:00:23,502 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 11:00:23,502 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 11:00:29,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 11:00:29,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 11:00:29,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 11:00:29,501 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 11:00:29,502 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 11:00:35,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 11:00:35,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 11:00:35,501 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 11:00:35,501 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 11:00:35,501 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 11:00:41,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 11:00:41,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 11:00:41,503 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 11:00:41,504 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 11:00:41,504 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 11:01:24,957 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 11:01:24,957 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 11:01:24,958 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 11:01:24,958 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 11:01:24,958 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 11:01:46,922 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-25 13:30:19,870 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-25 13:30:19,879 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-04-25 13:30:19,883 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-25 13:30:27,756 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-25 13:30:27,771 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 13:30:27,771 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 13:30:27,772 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 13:30:27,773 [1] DEBUG Debug - client.Sceret :Yycm1587792628 Debug 
+2020-04-25 13:30:27,775 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 13:30:27,775 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-25 13:30:58,500 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-25 13:30:58,501 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-04-25 13:30:58,502 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-04-25 13:30:58,502 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-04-25 13:30:58,502 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-04-25 13:31:07,257 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-25 13:32:47,324 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-25 13:32:47,336 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 13:32:47,337 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 13:32:47,337 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 13:32:47,337 [1] DEBUG Debug - client.Sceret :Yycm1587792767 Debug 
+2020-04-25 13:32:47,337 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 13:32:47,337 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-25 13:32:50,105 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-25 13:32:50,105 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-25 13:32:50,106 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-25 13:32:50,107 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-25 13:32:50,107 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-25 13:32:50,107 [1] DEBUG Debug - client.Sceret :Yycm1587792770 Debug 
+2020-04-25 13:32:50,107 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-25 13:32:50,107 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 

@@ -1,0 +1,143 @@
+print('hello world  metatable')
+
+
+local a = pcall(function(i) print(i) end, 33)
+print(a) --true
+ 
+local b = pcall(function(i) print(i) error('error..') end, 33)
+print(b)  --false
+
+-- local function add(a,b)
+--    assert(type(a) == "number", "a 不是一个数字")
+--    assert(type(b) == "number", "b 不是一个数字")
+--    return a+b
+-- end
+-- add(10)
+-- local  mt ={}
+-- mt.__new=function(...)
+-- 	print("is metatable function new")
+-- end
+
+-- local t={}
+-- setmetatable(t,mt)
+--  t={}
+-- print(getmetatable(t)) 
+--__rawset 只设置当前表中的元素，忽略元表中的__newindex 当设置当表中元素且不想触发__newindex时使用
+
+-- local mt={}
+-- local newtable={}
+-- mt.__newindex=newtable
+-- local t={}
+-- setmetatable(t,mt)
+-- t.key="set value finsh"
+-- print(t.key, '' ,newtable.key)
+-- rawset(t,"key"," rawset value finish")
+-- print(t.key, '' ,newtable.key)
+--__rawGet 只获取当前表中的元素 忽略原表中__index   当获取表中的一个元素时且不想触发__index时使用 
+-- local mt={}
+-- mt.__index={key="value is metatatable"}
+-- local t ={}
+-- setmetatable(t,mt)
+-- print(t.key)  
+-- print(rawget(t,"key"))
+
+--元方法 __newindex 作为table时 在赋值一个不存在的索引和值时会将该索引和值赋值到__newindex所对应的表中
+-- local mt={}
+-- local  newtable ={}
+-- mt.__newindex=newtable
+-- local t={key="1234"}
+ 
+-- print(t.key2, "  " ,newtable.key2)
+-- setmetatable(t,mt)
+-- t.key2="666"
+-- print(t.key2 ,"  ", newtable.key2)
+--元方法 __newindex 作为函数时 在赋值一个不存在的key值时触发 形式为：table i value
+-- local mt={}
+-- mt.__newindex=function(table,i,value)
+-- 	print(" i:"..i .." value:"..value)
+-- end
+-- local t={key="1234"}
+-- print(t.key)
+-- print(t.key2)
+-- setmetatable(t,mt)
+-- t.key2="666"
+
+ 
+--元方法__index  为table时 在调用一个不存在的索引时候触发
+-- local mt={}
+-- mt.__index={key="2222"}
+-- local t ={1,2,3}
+-- print(t.key)
+-- setmetatable(t,mt)
+-- print(t.key)
+-- print(t.key2)
+
+ 
+--元方法__index  在调用一个不存在的索引时候触发
+-- local mt={}
+-- mt.__index=function(t,key)
+-- 	return " 元方法__index key:"..key
+-- end
+
+-- local t ={1,2,3}
+-- print(t.key)
+-- setmetatable(t,mt)
+-- print(t.key)
+
+
+
+-- local mt={}
+-- --创建元方法
+-- mt.__tostring=function(t)
+-- 	local temp=""
+-- 	for i,v in ipairs(t) do
+-- 		print(i,v)
+-- 		temp=temp..v..","
+-- 	end
+-- 	return temp	
+-- end
+
+-- local t = {1,2,3,4,5}
+-- setmetatable(t,mt)
+-- print(t)
+
+-- --创建元方法
+-- local  mt ={}
+-- --创建call回调 相当于构造函数
+-- mt.__call=function(mytable,... )
+-- 	for i,v in ipairs{...} do
+-- 		print(i,v)
+-- 	end
+-- end
+
+-- local t={}
+-- setmetatable(t,mt)
+-- t(1,2,3)
+
+
+--创建元方法
+-- local mt ={}
+-- mt.__add=function(t1,t2)
+-- 	local temp={}
+-- 	for k,v in pairs(t1) do
+-- 		temp[#temp+1]=v	
+-- 	end
+-- 	for k,v in pairs(t2) do
+-- 		temp[#temp+1]=v	
+-- 	end
+-- 	return temp
+-- end
+
+
+
+-- local t1 ={1,2,3}
+-- local t2={4,5}
+
+-- --设置mt为t1的元表
+-- setmetatable(t1,mt)
+
+-- local t3 =t1+t2
+-- for i,v in ipairs(t3) do
+--  print( "i:"..i.. "  v:"..v)
+-- end
+

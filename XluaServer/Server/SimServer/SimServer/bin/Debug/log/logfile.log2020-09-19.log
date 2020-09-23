@@ -1,0 +1,56 @@
+﻿2020-09-19 23:10:59,155 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-09-19 23:10:59,175 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-09-19 23:10:59,184 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-09-19 23:11:07,172 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-09-19 23:11:07,195 [1] DEBUG Debug - 接收数据 消息体长度：10 Debug 
+2020-09-19 23:11:37,502 [1] DEBUG Debug - 接收数据 消息体长度：10 Debug 
+2020-09-19 23:11:37,503 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-09-19 23:11:37,505 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-09-19 23:13:58,460 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-09-19 23:13:58,480 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-09-19 23:13:58,488 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-09-19 23:14:19,831 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-09-19 23:15:12,472 [1] DEBUG Debug - 接收数据 消息体长度：10 Debug 
+2020-09-19 23:15:12,474 [1] DEBUG Debug - 接收数据 消息体长度：10 Debug 
+2020-09-19 23:15:12,475 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-09-19 23:15:12,476 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-09-19 23:19:26,773 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-09-19 23:19:26,793 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-09-19 23:19:26,803 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-09-19 23:19:44,083 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-09-19 23:21:44,500 [1] DEBUG Debug - Ping Close127.0.0.1:58371 Debug 
+2020-09-19 23:21:44,501 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-09-19 23:22:39,302 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-09-19 23:23:30,295 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-09-19 23:23:30,297 [1] DEBUG Debug - netProtocol：Ping Debug 
+2020-09-19 23:23:30,298 [1] DEBUG Debug - 收到了心跳包  Debug 
+2020-09-19 23:23:30,373 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：8 Debug 
+2020-09-19 23:23:30,374 [1] DEBUG Debug - 回应了心跳包  Debug 
+2020-09-19 23:23:30,378 [1] DEBUG Debug - 接收数据 消息体长度：10 Debug 
+2020-09-19 23:23:30,378 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-09-19 23:23:30,379 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-09-19 23:50:24,419 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-09-19 23:50:24,438 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-09-19 23:50:24,446 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-09-19 23:50:41,931 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-09-19 23:50:41,954 [1] DEBUG Debug - 接收数据 消息体长度：10 Debug 
+2020-09-19 23:50:41,955 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-09-19 23:50:50,245 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-09-19 23:53:03,725 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-09-19 23:53:03,743 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-09-19 23:53:03,751 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-09-19 23:53:09,587 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-09-19 23:53:09,610 [1] DEBUG Debug - 接收数据 消息体长度：10 Debug 
+2020-09-19 23:53:09,611 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-09-19 23:53:14,255 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-09-19 23:53:33,483 [1] DEBUG Debug - client.Sceret :Yycm1600530813 Debug 
+2020-09-19 23:56:54,149 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-09-19 23:56:54,168 [1] DEBUG Debug - 注册了一个事件：Ping Debug 
+2020-09-19 23:56:54,177 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-09-19 23:57:00,222 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-09-19 23:57:00,245 [1] DEBUG Debug - 接收数据 消息体长度：10 Debug 
+2020-09-19 23:57:00,246 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-09-19 23:57:02,096 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-09-19 23:57:02,219 [1] DEBUG Debug - client.Sceret :Yycm1600531022 Debug 
+2020-09-19 23:57:02,226 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：24 Debug 
+2020-09-19 23:57:19,382 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 

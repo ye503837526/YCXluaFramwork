@@ -1,0 +1,188 @@
+ViewAide  = { }
+
+function ViewAide:GetComponent(gameobject,component)
+	return gameobject:GetComponent(typeof(component))
+end
+
+function ViewAide:GetComponents(gameobject,component)
+	local node = gameobject.transform
+	local childcount = node.childCount
+	local items = {}
+	for i = 1,childcount do
+		items[i] = node:GetChild(i-1):GetComponent(typeof(component))
+	end
+	return items
+end
+
+function ViewAide:AddButtonEvent(button,target,func)
+	if func == nil then
+		Debug.LogError("ViewAide AddButtonEvent error!button:" .. button.transform.name)
+		return
+	end
+	local function click( )
+		func(target,button)
+	end
+	button.onClick:AddListener(click)
+end
+
+function ViewAide:AddButtonEvents(buttonlist,target,func)
+	if buttonlist == nil then
+		Debug.LogError("ViewAide AddButtonEvents error!list is nil:")
+		return
+	end
+	for i = 1,#buttonlist do
+		local index = i
+		local button = buttonlist[i]
+		local function click( )
+			func(target,button,index)
+		end
+		if button ~= nil then
+			button.onClick:AddListener(click)
+		else
+			Debug.LogError("ViewAide AddButtonEvents error!find no button at child:"..index)
+		end
+	end
+end
+
+function ViewAide:AddSliderEvent(slider,target,func)
+	if func == nil then
+		Debug.LogError("ViewAide AddSliderEvent error!button:"..slider.transform.name)
+		return
+	end
+	local function onvaluechange(p)
+		func(target,slider,p)
+	end
+	slider.onValueChanged:AddListener(onvaluechange)
+end
+
+function ViewAide:AddSliderEvents(sliderlist,target,func)
+	if sliderlist == nil then
+		Debug.LogError("ViewAide AddSliderEvents error!list is nil:")
+		return
+	end
+	for i = 1,#sliderlist do
+		local index = i
+		local slider = sliderlist[i]
+		local function onvaluechange(p)
+			func(target,slider,p,index)
+		end
+		if slider ~= nil then
+			slider.onValueChanged:AddListener(onvaluechange)
+		else
+			Debug.LogError("ViewAide AddSliderEvents error!find no slider at child:"..index)
+		end
+	end
+end
+
+function ViewAide:AddInputEvent(input,target,func,eventname)
+	local function onevent(text)
+		if func ~= nil then func(target,input,text,eventname) end
+	end
+	if eventname == nil or eventname == "onValueChanged" then --一般只需要这个，如还需要其他的可以再扩展
+		input.onValueChanged:AddListener(onevent)
+	end
+end
+
+function ViewAide:AddInputEvents(inputlist,target,func)
+	if inputlist == nil then
+		Debug.LogError("ViewAide AddInputEvents error!list is nil:")
+		return
+	end
+	for i = 1,#inputlist do
+		local index = i
+		local input = inputlist[i]
+		local function onevent(text)
+			func(target,input,text,index)
+		end
+		if input ~= nil then
+			input.onEndEdit:AddListener(onevent)
+		else
+			Debug.LogError("ViewAide inputlist error!find no slider at child:"..index)
+		end
+	end
+end
+
+function ViewAide:AddTmpInputEvent(input,target,func,eventname)
+	local function onevent(text)
+		if func ~= nil then func(target,input,text,eventname) end
+	end
+	if eventname == nil or eventname == "onEndEdit" then --一般只需要这个，如还需要其他的可以再扩展
+		input.onEndEdit:AddListener(onevent)
+	end
+end
+
+function ViewAide:AddTmpInputEvents(inputlist,target,func,eventname)
+	if inputlist == nil then
+		Debug.LogError("ViewAide AddTmpInputEvents error!list is nil:")
+		return
+	end
+	for i = 1,#inputlist do
+		local index = i
+		local input = inputlist[i]
+		local function onevent(text)
+			func(target,input,text,index,eventname)
+		end
+		if eventname == nil or eventname == "onEndEdit" then
+			input.onEndEdit:AddListener(onevent)
+		end
+	end
+end
+
+function ViewAide:AddToggleEvent(toggle,target,func)
+	local function onvaluechange( v )
+		func(target,toggle,v)
+	end
+	toggle.onValueChanged:AddListener(onvaluechange)
+end
+
+function ViewAide:AddToggleEvents(togglelist,target,func)
+	if togglelist == nil then
+		Debug.LogError("ViewAide AddToggleEvents error!list is nil:")
+		return
+	end
+	for i = 1,#togglelist do
+		local index = i
+		local toggle = togglelist[i]
+		local function onvaluechange( v )
+			func(target,toggle,v,index)
+		end
+		if toggle ~= nil then
+			toggle.onValueChanged:AddListener(onvaluechange)
+		else
+			Debug.LogError("ViewAide AddToggleEvents error!find no toggle at child:"..index)
+		end
+	end
+end
+
+function ViewAide:AddTriggle(gameObject,eventname,target,func)
+	local function trigglefunc(evt)
+		func(target,gameObject)
+	end
+	local triggle = EventTriggerAssist.Get(gameObject)
+	if eventname == "LeftDown" then
+		triggle.LeftDown = triggle.LeftDown + trigglefunc
+	end
+	if eventname == "LeftUp" then
+		triggle.LeftUp = triggle.LeftUp + trigglefunc
+	end
+	if eventname == "LeftDrag" then
+		triggle.LeftDrag = triggle.LeftDrag + trigglefunc
+	end
+end
+
+function ViewAide:DestroyChildren(transform,removeself)
+	local ds  = removeself or false
+	local childcount = transform.childCount
+	if childcount > 0 then
+		for i = childcount,1,-1 do
+			local t = transform:GetChild(i-1)
+			--t.gameObject:SetActive(true)
+			GameObject.Destroy(t.gameObject)
+		end
+	end
+	if ds then
+		GameObject.Destroy(transform.gameObject)
+	end
+end
+
+return ViewAide

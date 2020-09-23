@@ -1,0 +1,55 @@
+NetEventCtrl ={}
+
+
+
+function NetEventCtrl:Init()
+	 self.eventlsit={}
+end
+----------------------------------------------
+--添加监听事件
+----------------------------------------------
+function NetEventCtrl:AddEvent(eventname,target,fun)
+	if	target==nil or fun==nil then 
+		error("NetEventCtrl:AddEvent Error!, target or fun Is nil ,Plase Check!"..debug.traceback())
+		return
+	end
+
+	local event = self.eventlsit[eventname]
+	
+	if	event==nil then 
+		 event={}
+		 event.eventname=eventname
+		 event.target=target
+		 event.fun=fun
+		 table.insert(self.eventlsit,event)
+		 print("Add Event getEvent",event )
+		 print("Add Event :",self.eventlsit[eventname])
+	else
+		error("NetEventCtrl:AddEvent Error!, 网络协议不允许有多个监听器!"..debug.traceback())
+	end
+end
+----------------------------------------------
+--移除监听事件
+----------------------------------------------
+function NetEventCtrl:RemoveEvent(eventname)
+	for k,v in pairs(self.eventlsit) do
+		if v~=nil and v.eventname==eventname then 
+			table.remove(self.eventlsit,v) 
+			return
+		end
+	end
+end
+----------------------------------------------
+--发射监听事件
+----------------------------------------------
+function NetEventCtrl:FireEvent(eventname,bytes)
+	--print("发射监听事件"..#self.eventlsit,bytes)
+	for k,v in pairs(self.eventlsit) do
+		if v~=nil and v.eventname==eventname then 
+			v.fun(v.target,bytes)
+			return
+		end
+	end
+end
+NetEventCtrl:Init()
+return NetEventCtrl

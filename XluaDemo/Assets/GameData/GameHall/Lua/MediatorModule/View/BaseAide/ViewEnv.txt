@@ -1,0 +1,28 @@
+
+local ViewEnv = {
+	-- Json = require "rapidjson",	
+	-- pb = require "pb",
+	-- Observer = require "GameHall.Lua.Common.Observer",
+	-- ConfigCenter = require "GameHall.Lua.Config.ConfigCenter",
+	-- HttpClient = require "GameHall.Lua.Net.Http.HttpClient",
+	ViewBase = require "GameHall.Lua.MediatorModule.View.BaseAide.ViewBase",
+	-- LoadingWidget = require "GameHall.Lua.View.Common.LoadingWidget",
+	-- FloatingWidget = require "GameHall.Lua.View.Common.FloatingWidget",
+	-- MessageWidget = require "GameHall.Lua.View.Common.MessageWidget",
+	-- MaskWidget = require "GameHall.Lua.View.Common.MaskWidget",
+	-- RewardWidget = require "GameHall.Lua.View.Common.RewardWidget",
+	-- CommonWidget = require "GameHall.Lua.View.Common.CommonWidget",
+	-- FistPopWidgent=require "GameHall.Lua.View.Common.FistPopWidgent",
+	-- AnnounceWidget = require "GameHall.Lua.View.Common.AnnounceWidget",
+	-- LoadingView = require "GameHall.Lua.View.Loading.LoadingView",
+	-- TaskManager = require "GameHall.Lua.Module.Task.TaskManager",
+	-- PropUtil=require "GameHall.Lua.Common.PropUtil",
+	-- GameUtil=require "GameHall.Lua.Common.GameUtil",
+	-- LanguagesUtil=require "GameHall.Lua.Common.LanguagesUtil",
+	-- AudioPlayer = require "GameHall.Lua.View.Common.AudioPlayer",
+	-- AssetLoader = AssetManager.Get("GameHall"),
+}
+
+setmetatable(ViewEnv,{__index = _G})
+
+return ViewEnv

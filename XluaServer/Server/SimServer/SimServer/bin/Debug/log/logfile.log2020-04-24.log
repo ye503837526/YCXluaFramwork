@@ -1,0 +1,244 @@
+﻿2020-04-24 10:05:29,978 [1] DEBUG Debug - 注册了一个事件：MsgSecret Debug 
+2020-04-24 10:05:29,990 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 10:05:33,514 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 10:05:33,529 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 10:05:33,529 [1] DEBUG Debug - netProtocol：MsgSecret Debug 
+2020-04-24 10:05:33,531 [1] DEBUG Debug - 收到了客户端发来的消息！MsgSecret Debug 
+2020-04-24 10:05:33,531 [1] DEBUG Debug - 发送了一个事件：MsgSecret Debug 
+2020-04-24 10:05:51,906 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 10:07:20,554 [1] DEBUG Debug - 注册了一个事件：MsgSecret Debug 
+2020-04-24 10:07:20,567 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 10:07:39,804 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 10:07:39,814 [1] DEBUG Debug - 接收数据 消息体长度：44 Debug 
+2020-04-24 10:07:39,815 [1] DEBUG Debug - netProtocol：MsgSecret Debug 
+2020-04-24 10:07:39,816 [1] DEBUG Debug - 收到了客户端发来的消息！MsgSecret Debug 
+2020-04-24 10:07:39,816 [1] DEBUG Debug - 发送了一个事件：MsgSecret Debug 
+2020-04-24 10:08:10,356 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 10:10:03,678 [1] DEBUG Debug - 注册了一个事件：MsgSecret Debug 
+2020-04-24 10:10:03,690 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 10:10:08,771 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 10:10:08,782 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-24 10:10:08,783 [1] DEBUG Debug - netProtocol：MsgSecret Debug 
+2020-04-24 10:10:08,784 [1] DEBUG Debug - 收到了客户端发来的消息！MsgSecret Debug 
+2020-04-24 10:10:08,784 [1] DEBUG Debug - 发送了一个事件：MsgSecret Debug 
+2020-04-24 10:10:14,497 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 10:31:20,744 [1] DEBUG Debug - 注册了一个事件：MsgSecret Debug 
+2020-04-24 10:31:20,759 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 10:31:26,101 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 10:31:26,112 [1] DEBUG Debug - 接收数据 消息体长度：4 Debug 
+2020-04-24 10:31:26,113 [1] DEBUG Debug - netProtocol：MsgSecret Debug 
+2020-04-24 10:31:26,115 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 10:31:26,119 [1] DEBUG Debug - 收到了客户端发来的消息！MsgSecret Debug 
+2020-04-24 10:31:26,119 [1] DEBUG Debug - 发送了一个事件：MsgSecret Debug 
+2020-04-24 10:31:50,892 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 13:23:42,346 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 13:23:42,359 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 13:25:24,454 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 13:25:24,467 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 13:25:24,468 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 13:25:24,469 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 13:25:24,471 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 13:25:24,473 [1] DEBUG Debug - 发送了一个事件：SECRET_REQUEST Debug 
+2020-04-24 13:25:38,499 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 13:33:11,774 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 13:33:11,787 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 13:33:19,392 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 13:33:19,406 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 13:33:19,406 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 13:33:19,407 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 13:33:19,410 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 13:33:19,412 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：System.Byte[] Debug 
+2020-04-24 13:33:28,700 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 13:35:37,169 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 13:35:37,183 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 13:35:37,185 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 13:35:37,185 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 13:35:37,185 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 13:52:17,405 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 13:52:17,423 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 13:52:25,513 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 13:52:25,528 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 13:52:25,529 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 13:52:25,530 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 13:52:25,531 [1] DEBUG Debug - client.Sceret :Yycm1587707546 Debug 
+2020-04-24 13:52:25,533 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 13:52:25,533 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：System.Byte[] Debug 
+2020-04-24 13:52:27,067 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 13:53:00,437 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 13:54:16,870 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 13:54:17,199 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 13:54:21,222 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 13:54:21,369 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 13:54:21,403 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 13:54:21,446 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 13:54:21,490 [1] DEBUG Debug - client.Sceret :Yycm1587707661 Debug 
+2020-04-24 13:54:21,552 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 13:54:21,621 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 13:54:53,849 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 13:55:17,959 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 13:55:18,027 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 13:55:18,028 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 13:55:18,029 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 13:55:18,029 [1] DEBUG Debug - client.Sceret :Yycm1587707718 Debug 
+2020-04-24 13:55:18,029 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 13:55:19,905 [1] ERROR Debug - Serialize Packet Error :System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 SerlializePacket.Serialize(WfPacket packet) 位置 D:\Project\Siki_Server\Server\SimServer\SimServer\Proto\SerlializePacket.cs:行号 47 Debug 
+2020-04-24 13:55:42,961 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 13:55:43,202 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 13:55:46,804 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 13:55:46,837 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 13:55:46,840 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 13:55:46,841 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 13:55:46,842 [1] DEBUG Debug - client.Sceret :Yycm1587707747 Debug 
+2020-04-24 13:55:46,843 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 13:55:46,844 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 13:57:47,501 [1] DEBUG Debug - Ping Close127.0.0.1:51497 Debug 
+2020-04-24 13:57:47,502 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 14:01:14,424 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 14:01:14,439 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 14:01:14,440 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 14:01:14,440 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 14:01:14,440 [1] DEBUG Debug - client.Sceret :Yycm1587708074 Debug 
+2020-04-24 14:01:14,441 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 14:01:14,522 [1] ERROR Debug - Serialize Packet Error :System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 SerlializePacket.Serialize(WfPacket packet) 位置 D:\Project\Siki_Server\Server\SimServer\SimServer\Proto\SerlializePacket.cs:行号 47 Debug 
+2020-04-24 14:01:51,608 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 14:01:51,621 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 14:01:56,458 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 14:01:56,473 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 14:01:56,474 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 14:01:56,475 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 14:01:56,476 [1] DEBUG Debug - client.Sceret :Yycm1587708116 Debug 
+2020-04-24 14:01:56,478 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 14:01:56,479 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 14:02:39,775 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 16:30:11,874 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 16:30:11,888 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 16:30:17,118 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 16:30:17,135 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 16:30:17,135 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 16:30:17,136 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 16:30:17,137 [1] DEBUG Debug - client.Sceret :Yycm1587717017 Debug 
+2020-04-24 16:30:17,140 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 16:30:17,141 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 16:31:08,724 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 16:31:22,559 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 16:31:22,575 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 16:31:22,576 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 16:31:22,576 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 16:31:22,576 [1] DEBUG Debug - client.Sceret :Yycm1587717083 Debug 
+2020-04-24 16:31:22,576 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 16:31:22,603 [1] ERROR Debug - Serialize Packet Error :System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 SerlializePacket.Serialize(WfPacket packet) 位置 D:\Project\Siki_Server\Server\SimServer\SimServer\Proto\SerlializePacket.cs:行号 47 Debug 
+2020-04-24 16:31:34,671 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 16:31:34,688 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 16:31:38,983 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 16:31:38,998 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 16:31:38,998 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 16:31:38,999 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 16:31:39,000 [1] DEBUG Debug - client.Sceret :Yycm1587717099 Debug 
+2020-04-24 16:31:39,002 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 16:31:39,003 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 16:32:29,018 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 16:34:46,653 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 16:34:46,666 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 16:34:50,286 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 16:34:50,299 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 16:34:50,299 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 16:34:50,300 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 16:34:50,301 [1] DEBUG Debug - client.Sceret :Yycm1587717290 Debug 
+2020-04-24 16:34:50,303 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 16:34:50,304 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 16:35:01,131 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 16:35:50,048 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 16:35:50,062 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 16:35:54,334 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 16:35:54,345 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 16:35:54,345 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 16:35:54,346 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 16:35:54,347 [1] DEBUG Debug - client.Sceret :Yycm1587717354 Debug 
+2020-04-24 16:35:54,349 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 16:35:54,350 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 16:36:00,155 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 16:36:43,126 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 16:36:43,136 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 16:36:43,136 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 16:36:43,136 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 16:36:43,136 [1] DEBUG Debug - client.Sceret :Yycm1587717403 Debug 
+2020-04-24 16:36:43,136 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 16:36:43,197 [1] ERROR Debug - Serialize Packet Error :System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 SerlializePacket.Serialize(WfPacket packet) 位置 D:\Project\Siki_Server\Server\SimServer\SimServer\Proto\SerlializePacket.cs:行号 47 Debug 
+2020-04-24 17:02:54,411 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 17:02:54,435 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 17:08:52,790 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 17:08:52,803 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 17:24:39,711 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 17:24:39,724 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 17:24:44,989 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 17:24:45,000 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 17:24:45,001 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 17:24:45,001 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 17:24:45,003 [1] DEBUG Debug - client.Sceret :Yycm1587720285 Debug 
+2020-04-24 17:24:45,004 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 17:24:45,006 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 17:24:52,320 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 17:24:57,029 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 17:24:57,039 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 17:24:57,040 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 17:24:57,040 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 17:24:57,040 [1] DEBUG Debug - client.Sceret :Yycm1587720297 Debug 
+2020-04-24 17:24:57,040 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 17:24:57,050 [1] ERROR Debug - Serialize Packet Error :System.ArgumentException: 目标数组的长度不够。请检查 destIndex 和长度以及数组的下限。
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length, Boolean reliable)
+   在 System.Array.Copy(Array sourceArray, Int32 sourceIndex, Array destinationArray, Int32 destinationIndex, Int32 length)
+   在 SerlializePacket.Serialize(WfPacket packet) 位置 D:\Project\Siki_Server\Server\SimServer\SimServer\Proto\SerlializePacket.cs:行号 47 Debug 
+2020-04-24 17:26:02,100 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 17:26:02,113 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 17:26:06,930 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 17:26:06,944 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 17:26:06,944 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 17:26:06,945 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 17:26:06,946 [1] DEBUG Debug - client.Sceret :Yycm1587720367 Debug 
+2020-04-24 17:26:08,894 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 17:26:08,895 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 17:26:16,778 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 17:26:21,128 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 17:26:21,140 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 17:26:21,141 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 17:26:21,141 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 17:26:21,141 [1] DEBUG Debug - client.Sceret :Yycm1587720381 Debug 
+2020-04-24 17:26:46,080 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 17:27:21,978 [1] DEBUG Debug - 注册了一个事件：SECRET_REQUEST Debug 
+2020-04-24 17:27:21,991 [1] INFO  Debug - 服务器启动监听127.0.0.1:8011成功 Debug 
+2020-04-24 17:27:26,316 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 17:27:26,329 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 17:27:26,329 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 17:27:26,331 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 17:27:26,332 [1] DEBUG Debug - client.Sceret :Yycm1587720446 Debug 
+2020-04-24 17:27:26,333 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 17:27:26,334 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 17:27:30,183 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 17:27:32,053 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 17:27:32,066 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 17:27:32,066 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 17:27:32,067 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 17:27:32,067 [1] DEBUG Debug - client.Sceret :Yycm1587720452 Debug 
+2020-04-24 17:27:32,067 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 17:27:32,067 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 17:27:36,245 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 
+2020-04-24 17:27:37,859 [1] DEBUG Debug - 一个客户端链接：127.0.0.1:8011,当前1个客户端在线！ Debug 
+2020-04-24 17:27:37,870 [1] DEBUG Debug - 接收数据 消息体长度：12 Debug 
+2020-04-24 17:27:37,872 [1] DEBUG Debug - netProtocol：SECRET_REQUEST Debug 
+2020-04-24 17:27:37,872 [1] DEBUG Debug - 收到了客户端发来的消息！SECRET_RESPONSE Debug 
+2020-04-24 17:27:37,872 [1] DEBUG Debug - client.Sceret :Yycm1587720458 Debug 
+2020-04-24 17:27:37,873 [1] DEBUG Debug - 写入字段：Sceret fileType:System.String Debug 
+2020-04-24 17:27:37,873 [1] DEBUG Debug - 向客户端发送了一条响应 数据长度：26 Debug 
+2020-04-24 17:27:40,808 [1] DEBUG Debug - 一个客户端断开链接，当前总连接数：0 Debug 

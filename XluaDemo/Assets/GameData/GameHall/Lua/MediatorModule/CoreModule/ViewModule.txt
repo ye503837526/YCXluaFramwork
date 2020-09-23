@@ -1,0 +1,88 @@
+ViewModule={}
+-----------------------------------------
+--初始化
+-----------------------------------------
+function ViewModule:Init()
+	print("ViewModule:Init()")
+	--界面列表
+	self.viewlist={}
+	--界面根路径
+	self.viewRootPath="Assets/GameData/Prefabs/"
+end
+-----------------------------------------
+--注册界面
+-----------------------------------------
+function ViewModule:Register(target,viewname)
+	local view=self:GetView(viewname)
+	if view==nil then 
+		table.insert(self.viewlist,{target=target,viewname=viewname})
+	end
+end
+-----------------------------------------
+--加载界面
+-----------------------------------------
+function ViewModule:LoadView(viewname)
+	local view =self:GetView(viewname)
+	if view~= nil then return end
+	local viewhead= string.sub(viewname,0,#viewname-4)
+	viewname=viewhead.."_"..viewname
+	local viewPath=self.viewRootPath..viewname
+	local viewObj= AssetsManager.Instance:LoadView(viewPath)
+	local behaviour = viewObj.transform:GetComponent(typeof(LuaBehaviour))
+
+	if behaviour == nil then
+		Debug.LogError("ViewManager LoadView Error----------->"..viewpath)
+		return nil
+	end
+
+	return behaviour.LuaTable
+end
+
+-----------------------------------------
+--获取界面
+-----------------------------------------
+function ViewModule:GetView(viewname)
+	for i=1,#self.viewlist do
+		if self.viewlist[i].viewname==viewname then 
+			return self.viewlist[i].target
+		end
+	end
+	return nil
+end
+
+-----------------------------------------
+--关闭界面
+-----------------------------------------
+function ViewModule:CloseView(target)
+	GF.AssetsManager.Instance:ReleaseObj(target.gameObject,true,0)
+end
+
+function ViewModule:CloseViewByName(viewname)
+	local view= self:GetView(viewname)
+	if	view~=nil then 
+		self:CloseView(view)
+	end
+
+end
+
+-----------------------------------------
+--取消注册界面
+-----------------------------------------
+function ViewModule:UnRegister(viewname)
+	for i=#self.viewlist,1,-1 do
+		if	self.viewlist[i].viewname==viewname then
+			table.remove(self.viewlist,i)
+			break
+		end
+	end
+end
+
+-----------------------------------------
+--资源释放
+-----------------------------------------
+function ViewModule:Release()
+	self.viewlist=nil
+	self.viewRootPath=nil
+end
+
+return ViewModule	

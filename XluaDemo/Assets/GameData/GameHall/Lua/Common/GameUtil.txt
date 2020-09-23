@@ -1,0 +1,120 @@
+GameUtil = {}
+
+local newsign = "pXLF0b7dRgxiqKnoprVAWTKQmLS2oHWvv"
+local base64 = NS.Base64Helper
+local function sortbykey(a,b)
+    return a.key < b.key
+end
+
+function GameUtil:GetTimeTick()
+	return NS.GameUtils.GetTimeTick()
+end
+
+function GameUtil:GenerateLogonCode()
+    local dt = ModuleManager.UserManager.model.LogonTime
+    local ss = string.format("%d-%d-%d,%d:%d:%d.%d",dt.Year,
+        dt.Month,dt.Day,dt.Hour,dt.Minute,dt.Second,dt.Milliseconds)
+    return EncryptUtil.MD5(ss)
+end
+
+function GameUtil:MakeSelfSign(time,userid,pass)
+    local signlist = {time = time,userid = userid,pass = pass}
+    local newlist =  {}
+    for k,v in pairs(signlist) do
+        newlist[#newlist +1] = {key = k,val = v}
+    end
+    table.sort(newlist,sortbykey)
+    local fmtlist = {}
+    for m,n in ipairs(newlist) do
+        print(n.key,n.val)
+        fmtlist[m] = n.key .. "=" .. n.val
+    end
+    local newtext = table.concat(fmtlist,"&") .. newsign
+    print("newtext:",newtext)
+    local ret = string.upper(base64.EncryptWithMD5(newtext))
+    return ret
+end
+------------------------------------------------------------------------
+--金币数量转为万亿
+------------------------------------------------------------------------
+function GameUtil:GoldNumToWan(gold)
+    gold=tonumber(gold)
+    if gold>=10000 then
+        local g=gold/10000
+        local a , b = math.modf(g)
+        if b==0.0  then 
+            return tostring(a).."万"
+        else
+            return tostring(gold/10000).."万"
+        end
+    elseif gold>=100000000 then
+        local g=gold/100000000
+        local a , b = math.modf(g)
+        if b==0.0 then 
+            return tostring(a).."亿"
+        else
+            return tostring(gold/100000000).."亿"
+        end
+    end
+    return tostring(gold)
+end
+
+------------------------------------------------------------------------
+--分割字符串
+------------------------------------------------------------------------
+function GameUtil:Split( str,reps )
+    local resultStrList = {}
+    string.gsub(str,'[^'..reps..']+',function ( w )
+        table.insert(resultStrList,w)
+    end)
+    return resultStrList
+end
+
+
+-- 判断字符串是不是手机号
+function GameUtil:IsPhoneNumber(str)
+    return string.match(str,"[1][3,4,5,7,6,8]%d%d%d%d%d%d%d%d%d") == str
+end
+
+-- 是不是包含特殊字符 ( 只能是 数字 字母 汉字 )
+function GameUtil:IsContainSpecChar(s)
+    local ss = {}
+    local k = 1
+    while true do
+        if k > #s then break end
+        local c = string.byte(s,k)
+        if not c then break end
+        if c<192 then
+            if not ( (c>=48 and c<=57) or (c>= 65 and c<=90) or (c>=97 and c<=122) )  then
+                return true
+            end
+            k = k + 1
+        elseif c<224 then
+            return true
+        elseif c<240 then
+            if c>=228 and c<=233 then
+                local c1 = string.byte(s,k+1)
+                local c2 = string.byte(s,k+2)
+                if c1 and c2 then
+                    local a1,a2,a3,a4 = 128,191,128,191
+                    if c == 228 then a1 = 184
+                    elseif c == 233 then a2,a4 = 190,c1 ~= 190 and 191 or 165
+                    end
+                    if not (c1>=a1 and c1<=a2 and c2>=a3 and c2<=a4) then
+                        return true
+                    end
+                end
+            else
+                return true
+            end
+            k = k + 3
+        elseif c<248 then
+            return true
+        end
+    end
+
+    return false
+end
+
+
+return GameUtil

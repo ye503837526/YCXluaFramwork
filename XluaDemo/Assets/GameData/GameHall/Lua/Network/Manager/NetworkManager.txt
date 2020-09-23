@@ -1,0 +1,42 @@
+local pb=require "pb"
+
+NetworkManager={}
+
+function NetworkManager:Init()
+	print("网络框架初始化>>>.>>>>>>>>>>>.")
+	local  function netlistenner(protocal,bytes)
+		 self:RcveMsgHandle(protocal,bytes)
+	end
+	GF.NetEvnentCtrl.LuaListener=netlistenner
+end
+
+--------------------------------------------------
+--消息处理
+--------------------------------------------------
+function NetworkManager:RcveMsgHandle(protocal,bytes)
+	print("Lua >>>>  收到网络消息 protocal",protocal)
+	--0-3为密钥等请求不需要派发
+	if protocal>3 then 
+		NetEventCtrl:FireEvent(protocal,bytes)
+	end
+end
+
+--------------------------------------------------
+--发送数据
+--------------------------------------------------
+function NetworkManager:SendPacket(protocal,protoname,table)
+	local packet=pb.encode(protoname,table)
+	print("lua NetworkManager 发送一条消息：",protoname ," #packet:",#packet)
+	GF.NetManager.Instance:LuaSendPacket(protocal,packet)
+end
+
+--------------------------------------------------
+--释放资源
+--------------------------------------------------
+function NetworkManager:Release()
+
+end
+
+NetworkManager:Init()
+
+return NetworkManager
